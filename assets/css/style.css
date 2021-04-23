@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.tal, #be .d h4, #be .d p, #idi .z h4, #idi .z h5, #idi .z p, #m #x p {
+  text-align: center;
+}
+
+nav a:hover, #logo h1 a:hover {
+  color: rgba(219, 10, 132, 0.74);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 0;
+  background-color: black;
+  border-bottom: 1px solid rgba(219, 10, 132, 0.74);
+  width: 100%;
+}
+
+header #logo h1 a {
+  color: white;
+  font-size: 45px;
+}
+
+header ul {
+  margin-top: 1.45%;
+}
+
+header ul li {
+  display: inline;
+  padding: 0 20px;
+}
+
+header ul li a {
+  color: white;
+  font-size: 19px;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  padding-top: 2%;
+}
+
+main #c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #c img {
+  width: 43%;
+}
+
+main #c #t {
+  margin-bottom: 6%;
+  padding-right: 15%;
+}
+
+main #c #t h2 {
+  color: white;
+  font-size: 40px;
+  border-bottom: 1px solid rgba(219, 10, 132, 0.74);
+}
+
+main #c #t p {
+  color: white;
+  font-size: 25px;
+}
+
+main .s {
+  margin-top: 5%;
+}
+
+main .s h3 {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  border-bottom: 1px solid rgba(219, 10, 132, 0.74);
+  width: 150px;
+}
+
+#be {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#be .d {
+  background-color: rgba(219, 10, 132, 0.74);
+  width: 22%;
+  margin-top: 100px;
+  border-radius: 7%;
+}
+
+#be .d i {
+  color: black;
+  font-size: 110px;
+  padding-top: 40px;
+}
+
+#be .d h4, #be .d p, #be .d #idi .z h5, #idi .z #be .d h5 {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+#be .d p {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+#idi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#idi .z {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(219, 10, 132, 0.74);
+  padding: 10px 0px 5px;
+  margin: 100px 10px 0;
+}
+
+#idi .z h4, #idi .z #be .d p, #be .d #idi .z p, #idi .z h5 {
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+#idi .z p {
+  color: black;
+}
+
+#m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px auto 0;
+  width: 50%;
+  margin-bottom: 100px;
+  padding: 40px;
+}
+
+#m img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid rgba(219, 10, 132, 0.74);
+}
+
+#m #x {
+  width: 70%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#m #x p {
+  color: white;
+  font-size: 20px;
+}
+
+#m #x #n {
+  background-color: rgba(219, 10, 132, 0.74);
+  width: 200px;
+  padding: 10px;
+  margin: 10px auto 0;
+}
+
+#f {
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#f .block {
+  padding: 60px;
+  margin-right: 40px;
+}
+
+#f .block h4, #f .block #be .d p, #be .d #f .block p, #f .block #idi .z h5, #idi .z #f .block h5 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid rgba(219, 10, 132, 0.74);
+}
+
+#f .block p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#f .block i {
+  color: rgba(219, 10, 132, 0.74);
+}
+
+#f .block #gmap_canvas {
+  margin-top: 10px;
+}
+
+#f .block #Name, #f .block #Email, #f .block #message, #f .block #butt {
+  width: 550px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  background-color: black;
+  border: 0.4px solid gray;
+  color: white;
+}
+
+#f .block #butt {
+  width: 100%;
+  color: white;
+}
+
+#f .block #butt:hover {
+  background-color: rgba(219, 10, 132, 0.74);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#f .block #message {
+  width: 96%;
+}
+
+footer {
+  border-top: 1px solid rgba(219, 10, 132, 0.74);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+footer .l {
+  padding: 8px 60px;
+  color: white;
+  font-size: 18px;
+}
+
+footer .l li {
+  display: inline;
+}
+
+footer .l li a {
+  color: white;
+  margin-right: 10px;
+}
+
+footer .l li a:hover {
+  color: rgba(219, 10, 132, 0.74);
+}
+/*# sourceMappingURL=style.css.map */
