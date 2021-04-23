@@ -6,7 +6,6 @@
         font-size:20px;
     }
 }
-
 @media screen and (max-width:1375px){
     .block{
         position: relative;
@@ -104,15 +103,19 @@
 @media screen and (max-width:523px){
     #f .block #Name{
         width: 300px;
+        margin-left:30px;
     }
     #f .block #Email{
         width: 300px;
+        margin-left:30px;
     }
     #f .block #message{
         width: 300px;
+        margin-left:30px;
     }
     #f .block #butt{
         width: 322px;
+        margin-left:30px;
     }
 } 
 @media screen and (max-width:500px){
@@ -129,8 +132,7 @@
     }
     header nav ul a{
         font-size: 15px;
-        padding: 10px 0;
-        
+        padding: 10px 0;   
     }
     main #c #t{
         top: -50px;
@@ -147,13 +149,6 @@
     }
 }
 @media screen and (max-width:460px){
-    #m #x #n{
-        width: 130px;
-        
-    }
-    #m #x #n p{
-        font-size: 15px;
-    }
     #m #x p{
         font-size: 17px;
     }
@@ -164,8 +159,6 @@
         display:block;
         text-align: center;
     }
-
-    
 }
 @media screen and (max-width:400px){
     main #c #t{
@@ -176,15 +169,32 @@
     }
     #f .block #Name{
             width: 200px;
+            margin-left:55px;
     }
     #f .block #Email{
             width: 200px;
+            margin-left:55px;
     }
     #f .block #message{
             width: 200px;
+            margin-left:55px;
     }
     #f .block #butt{
             width: 222px;
+            margin-left:55px;
+    }   
+}
+@media screen and (max-width:322px){
+    #f .block #Name{
+            margin-left:25px;
     }
-     
+    #f .block #Email{
+            margin-left:25px;
+    }
+    #f .block #message{
+            margin-left:25px;
+    }
+    #f .block #butt{
+            margin-left:25px;
+    } 
 }

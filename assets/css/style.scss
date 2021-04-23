@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -163,16 +164,10 @@ main{
             color: $bela;
             @extend .tal;
             font-size: 20px;
-            
-        }
-        #n{
-            background-color: $mag;
-            width: 200px;
-            padding: 10px;
-            margin: 10px auto 0;
         }
     }
 }
+
 #f{
     
     margin:0px auto;
@@ -180,7 +175,7 @@ main{
     justify-content: center;
     .block{
         
-        padding: 60px;
+        padding: 50px 0;
         margin-right: 40px;       
         h4{
             font-size: 30px;
