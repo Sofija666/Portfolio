@@ -5,17 +5,11 @@
   list-style-type: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .tal, #be .d h4, #be .d p, #idi .z h4, #idi .z h5, #idi .z p, #m #x p {
   text-align: center;
-}
-
-nav a:hover, #logo h1 a:hover {
-  color: rgba(219, 10, 132, 0.74);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  cursor: pointer;
 }
 
 header {
@@ -36,6 +30,14 @@ header {
 header #logo h1 a {
   color: white;
   font-size: 45px;
+  font-style: italic;
+}
+
+header #logo h1 a:hover {
+  color: rgba(219, 10, 132, 0.74);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 header ul {
@@ -50,6 +52,13 @@ header ul li {
 header ul li a {
   color: white;
   font-size: 19px;
+}
+
+header ul li a:hover {
+  color: rgba(219, 10, 132, 0.74);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 body {
@@ -303,5 +312,8 @@ footer .l li a {
 
 footer .l li a:hover {
   color: rgba(219, 10, 132, 0.74);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

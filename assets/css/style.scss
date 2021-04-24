@@ -5,7 +5,7 @@
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
-    
+    font-family: 'Open Sans', sans-serif;
 }
 $crna: rgb(0, 0, 0);
 $bela: rgb(255, 255, 255);
@@ -19,10 +19,10 @@ $f: flex;
 .tal{
     text-align: $cen;
 }
-nav a:hover, #logo h1 a:hover{
+@mixin ho{
     color:  $mag;
     transition:0.5s;
-                cursor:pointer;
+    cursor:pointer;
 }
 header{
     display: $f;
@@ -37,6 +37,10 @@ header{
             a{
                 color: $bela;
                 font-size: 45px;
+                font-style: italic;
+                &:hover{
+                    @include ho;
+                }
             }
         }
     }
@@ -48,6 +52,9 @@ header{
             a{
                 color: $bela;
                 font-size: 19px;
+                &:hover{
+                    @include ho;
+                }
             }
         }
     }
@@ -61,7 +68,6 @@ main{
         display: $f;
         justify-content: $cen;
         align-items: $cen;
-
         img{
             width: 43%; 
         }
@@ -87,8 +93,7 @@ main{
             margin:0 auto;
             font-size: 30px;
             border-bottom: 1px solid $mag;
-            width: 150px;
-            
+            width: 150px; 
         }
     }
 }
@@ -150,7 +155,6 @@ main{
     width: 50%;
     margin-bottom: 100px;
     padding: 40px;
-    
     img{
         width: 200px;
         border-radius: 50%;
@@ -167,14 +171,11 @@ main{
         }
     }
 }
-
 #f{
-    
     margin:0px auto;
     @include flex;
     justify-content: center;
-    .block{
-        
+    .block{  
         padding: 50px 0;
         margin-right: 40px;       
         h4{
@@ -182,8 +183,7 @@ main{
             margin-bottom: 20px;
             color: $bela;
             text-align: $cen;
-            border-bottom: 1px solid $mag;
-            
+            border-bottom: 1px solid $mag;   
         }
         p{
             font-size: 20px;
@@ -234,11 +234,9 @@ footer{
                 color:$bela;
                 margin-right: 10px;
                 &:hover{
-                    color:$mag
+                    @include ho;
                 }
             }
-           
         }
-    }
-    
+    } 
 }
