@@ -19,9 +19,6 @@
     }
 }
 @media screen and (max-width:900px){
-    main #c #t h2{
-        font-size:30px;
-    }
     main #c{
         flex-direction: column;
     }
@@ -38,35 +35,27 @@
         font-size:20px;
         text-align: center;
     }
+    main .s h3{
+        font-size: 25px;
+    }
+    #f .block h4{
+        font-size: 25px;
+    }
 }
 @media screen and (max-width:750px){
     header{
         flex-direction:column;
     }
-    header #logo h1 a{
-        font-size: 35px;
-    }
-    header nav ul a{
-        font-size: 17px;
-    }
-    main #c #t h2{
-        font-size:20px;
-    }
-    main #c #t p{
-        font-size:10px;
-    }
 }
 @media screen and (max-width:691px){
+    main #c #t{
+        margin-bottom: 5%;
+        top: -80px;
+    }
     #idi .z img{
         height: 300px;
     }
-    #f .block #Name{
-        width: 400px;
-    }
-    #f .block #Email{
-        width: 400px;
-    }
-    #f .block #message{
+    #f .block #Name, #f .block #Email, #f .block #message{
         width: 400px;
     }
     #f .block #butt{
@@ -74,20 +63,9 @@
     }
 }
 @media screen and (max-width:605px){
-    header #logo h1 a{
-        font-size: 30px;
-    }
-    header nav ul a{
-        font-size: 16px;
-    }
     main #c #t{
         top: -80px;
-    }
-    main #c #t h2{
-        font-size:20px;
-    }
-    main #c #t p{
-        font-size:10px;
+        margin-bottom: 4%;
     }
     #idi .z img{
         height: 200px;
@@ -101,15 +79,7 @@
     }
 }
 @media screen and (max-width:523px){
-    #f .block #Name{
-        width: 300px;
-        margin-left:30px;
-    }
-    #f .block #Email{
-        width: 300px;
-        margin-left:30px;
-    }
-    #f .block #message{
+    #f .block #Name, #f .block #Email, #f .block #message{
         width: 300px;
         margin-left:30px;
     }
@@ -119,9 +89,6 @@
     }
 } 
 @media screen and (max-width:500px){
-    header #logo h1 a{
-        font-size: 30px;
-    }
     header nav ul{
         flex-direction: column;
         display: flex;
@@ -131,24 +98,17 @@
         padding: 2px 0;
     }
     header nav ul a{
-        font-size: 15px;
         padding: 10px 0;   
     }
     main #c #t{
         top: -50px;
-    }
-    main #c #t h2{
-        font-size:20px;
-    }
-    main #c #t p{
-        font-size:10px;
     }
     #be .d{
         width: 99%;
         margin-top:35px;
     }
 }
-@media screen and (max-width:460px){
+@media screen and (max-width:468px){
     #m #x p{
         font-size: 17px;
     }
@@ -167,15 +127,7 @@
     #idi .z img{
         height: 150px;
     }
-    #f .block #Name{
-            width: 200px;
-            margin-left:55px;
-    }
-    #f .block #Email{
-            width: 200px;
-            margin-left:55px;
-    }
-    #f .block #message{
+    #f .block #Name, #f .block #Email, #f .block #message{
             width: 200px;
             margin-left:55px;
     }
@@ -185,16 +137,8 @@
     }   
 }
 @media screen and (max-width:322px){
-    #f .block #Name{
+    #f .block #Name, #f .block #Email, #f .block #message, #f .block #butt{
             margin-left:25px;
     }
-    #f .block #Email{
-            margin-left:25px;
-    }
-    #f .block #message{
-            margin-left:25px;
-    }
-    #f .block #butt{
-            margin-left:25px;
-    } 
+    
 }
