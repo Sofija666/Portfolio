@@ -10,27 +10,45 @@
 $crna: rgb(0, 0, 0);
 $bela: rgb(255, 255, 255);
 $mag: rgba(219, 10, 132, 0.74);
-$cen: center;
-$f: flex;
 @mixin flex{
-    display: $f;
+    display: flex;
     flex-wrap: wrap;
 }
 .tal{
-    text-align: $cen;
+    text-align:center;
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
+}
+.bor{
+    border-bottom: 1px solid $mag;
+}
+.m0{
+    margin: 0 auto;
 }
 @mixin ho{
     color:  $mag;
     transition:0.5s;
     cursor:pointer;
 }
+@mixin ho2{
+    transform: scale(1.03);
+	transition: 1s;
+} 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
 header{
-    display: $f;
+    display: flex;
     justify-content: space-around;
-    align-items: $cen;
+    @extend .aic;
     padding: 1% 0 ;
     background-color: $crna;
-    border-bottom: 1px solid  $mag;
+    @extend .bor;
     width: 100%;
     #logo{
         h1{
@@ -61,13 +79,14 @@ header{
 }
 body{
     background-color: $crna;
+    animation: fadeIn 2s;
 }
 main{
     padding-top: 2%;
     #c{
-        display: $f;
-        justify-content: $cen;
-        align-items: $cen;
+        display: flex;
+        @extend .jcc;
+        @extend .aic;
         img{
             width: 43%; 
         }
@@ -77,7 +96,7 @@ main{
             h2{
                 color: $bela;
                 font-size: 40px;
-                border-bottom: 1px solid $mag;
+                @extend .bor;
             }
             p{
                 color: $bela;
@@ -89,10 +108,10 @@ main{
         margin-top: 5%;
         h3{
             color: $bela;
-            text-align: $cen;
-            margin:0 auto;
+            @extend .tal;
+            @extend .m0;
             font-size: 30px;
-            border-bottom: 1px solid $mag;
+            @extend .bor;
             width: 150px; 
         }
     }
@@ -100,17 +119,23 @@ main{
 #be{
     @include flex;
     justify-content: space-between;
-    margin: 0 auto;
+    @extend .m0;
     width: 80%;
     .d{
        background-color: $mag;
         width: 22%;
         margin-top: 100px;
         border-radius: 7%;
-        i{
+        &:hover{
+            @include ho2;
+        }
+        div{
+            @extend .tal;
+            i{
                 color: $crna;
                 font-size: 110px;
                 padding-top: 40px;
+            }
         }
         h4{
             @extend .tal;
@@ -126,12 +151,15 @@ main{
 }
 #idi{
     @include flex;
-    justify-content: $cen;
+    @extend .jcc;
     .z{
         @include flex;
         background-color: $mag;
         padding: 10px 0px 5px;
         margin: 100px 10px 0;
+        &:hover{
+            @include ho2;
+        }
         h4{
             @extend .tal;
             padding-bottom: 5px;
@@ -149,8 +177,8 @@ main{
 }
 #m{ 
     @include flex;
-    justify-content: $cen;
-    align-items: $cen;
+    @extend .jcc;
+    @extend .aic;
     margin:70px auto 0;
     width: 50%;
     margin-bottom: 100px;
@@ -174,7 +202,7 @@ main{
 #f{
     margin:0px auto;
     @include flex;
-    justify-content: center;
+    @extend .jcc;
     .block{  
         padding: 50px 0;
         margin-right: 40px;       
@@ -182,8 +210,8 @@ main{
             font-size: 30px;
             margin-bottom: 20px;
             color: $bela;
-            text-align: $cen;
-            border-bottom: 1px solid $mag;   
+            @extend .tal;
+            @extend .bor;   
         }
         p{
             font-size: 20px;
@@ -195,6 +223,9 @@ main{
         }
         #gmap_canvas{
             margin-top: 10px;
+            &:hover{
+                @include ho2;
+            }
         }
         #Name, #Email, #message, #butt{
             width: 550px;
@@ -222,7 +253,7 @@ main{
 footer{
     border-top: 1px solid $mag;
     @include flex;
-    justify-content: $cen;
+    @extend .jcc;
     padding: 20px;
     .l{
         padding: 8px 60px;

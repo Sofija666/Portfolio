@@ -19,6 +19,10 @@
     }
 }
 @media screen and (max-width:900px){
+    main #m{
+        margin: 50px auto;
+        padding: 40px 0 5px;
+    }
     main #c{
         flex-direction: column;
     }
@@ -34,6 +38,9 @@
     main #c #t p{
         font-size:20px;
         text-align: center;
+    }
+    main .s{
+        margin-top: 8%;
     }
     main .s h3{
         font-size: 25px;
@@ -123,6 +130,9 @@
 @media screen and (max-width:400px){
     main #c #t{
         top: -40px;
+    }
+    #f .block{
+        padding: 25px 0;
     }
     #idi .z img{
         height: 150px;
