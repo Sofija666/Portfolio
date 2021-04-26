@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+$crna: rgb(0, 0, 0);
+$bela: rgb(255, 255, 255);
+$mag: rgba(219, 10, 132, 0.74);
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tal{
+    text-align:center;
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
+}
+.bor{
+    border-bottom: 1px solid $mag;
+}
+.m0{
+    margin: 0 auto;
+}
+@mixin ho{
+    color:  $mag;
+    transition:0.5s;
+    cursor:pointer;
+}
+@mixin ho2{
+    transform: scale(1.03);
+	transition: 1s;
+} 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    @extend .aic;
+    padding: 1% 0 ;
+    background-color: $crna;
+    @extend .bor;
+    width: 100%;
+    #logo{
+        h1{
+            a{
+                color: $bela;
+                font-size: 45px;
+                font-style: italic;
+                &:hover{
+                    @include ho;
+                }
+            }
+        }
+    }
+    ul{
+        margin-top: 1.45%;
+        li{
+            display: inline;
+            padding: 0 20px;
+            a{
+                color: $bela;
+                font-size: 19px;
+                &:hover{
+                    @include ho;
+                }
+            }
+        }
+    }
+}
+body{
+    background-color: $crna;
+    animation: fadeIn 2s;
+}
+main{
+    padding-top: 2%;
+    #c{
+        display: flex;
+        @extend .jcc;
+        @extend .aic;
+        img{
+            width: 43%; 
+        }
+        #t{
+            margin-bottom: 6%;
+            padding-right: 15%;
+            h2{
+                color: $bela;
+                font-size: 40px;
+                @extend .bor;
+            }
+            p{
+                color: $bela;
+                font-size: 25px;
+            }
+        }
+    }
+    .s{ 
+        margin-top: 5%;
+        h3{
+            color: $bela;
+            @extend .tal;
+            @extend .m0;
+            font-size: 30px;
+            @extend .bor;
+            width: 150px; 
+        }
+    }
+}
+#be{
+    @include flex;
+    justify-content: space-between;
+    @extend .m0;
+    width: 80%;
+    .d{
+       background-color: $mag;
+        width: 22%;
+        margin-top: 100px;
+        border-radius: 7%;
+        &:hover{
+            @include ho2;
+        }
+        div{
+            @extend .tal;
+            i{
+                color: $crna;
+                font-size: 110px;
+                padding-top: 40px;
+            }
+        }
+        h4{
+            @extend .tal;
+            font-size: 20px;
+            padding: 5px 0;
+        }
+        p{
+            @extend h4;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+#idi{
+    @include flex;
+    @extend .jcc;
+    .z{
+        @include flex;
+        background-color: $mag;
+        padding: 10px 0px 5px;
+        margin: 100px 10px 0;
+        &:hover{
+            @include ho2;
+        }
+        h4{
+            @extend .tal;
+            padding-bottom: 5px;
+            font-size: 20px;
+            color: $crna;
+        }
+        h5{
+            @extend h4;
+        }
+        p{
+            @extend .tal;
+            color: $crna;
+        }
+    }
+}
+#m{ 
+    @include flex;
+    @extend .jcc;
+    @extend .aic;
+    margin:70px auto 0;
+    width: 50%;
+    margin-bottom: 100px;
+    padding: 40px;
+    img{
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid $mag;
+    }
+    #x{
+        width: 70%;
+        padding: 10px;
+        margin-top: 20px;
+        p{
+            color: $bela;
+            @extend .tal;
+            font-size: 20px;
+        }
+    }
+}
+#f{
+    margin:0px auto;
+    @include flex;
+    @extend .jcc;
+    .block{  
+        padding: 50px 0;
+        margin-right: 40px;       
+        h4{
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $bela;
+            @extend .tal;
+            @extend .bor;   
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: $bela;
+        }
+        i{
+            color: $mag;
+        }
+        #gmap_canvas{
+            margin-top: 10px;
+            &:hover{
+                @include ho2;
+            }
+        }
+        #Name, #Email, #message, #butt{
+            width: 550px;
+            padding: 10px;
+            resize: none;
+            outline:none;
+            background-color: $crna;
+            border: 0.4px solid gray;
+            color: $bela;
+        }
+        #butt{
+            width: 100%;
+            color: $bela;
+            &:hover{
+                background-color:$mag;
+                transition:0.5s;
+                cursor:pointer;
+            }
+        }
+        #message{
+            width: 96.3%;
+        }
+    }
+}
+footer{
+    border-top: 1px solid $mag;
+    @include flex;
+    @extend .jcc;
+    padding: 20px;
+    .l{
+        padding: 8px 60px;
+        color:$bela;
+        font-size: 18px;
+        li{
+            display: inline;
+            a{
+                color:$bela;
+                margin-right: 10px;
+                &:hover{
+                    @include ho;
+                }
+            }
+        }
+    } 
+}

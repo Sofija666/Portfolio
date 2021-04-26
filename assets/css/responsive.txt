@@ -1,0 +1,153 @@
+@media screen and (max-width:1500px){
+    main #c #t h2{
+        font-size:30px;
+    }
+    main #c #t p{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:1375px){
+    .block{
+        position: relative;
+        right: -30px;
+    }
+}
+@media screen and (max-width:1100px){
+    #be .d{
+        width: 48%;
+        margin-top:35px;
+    }
+}
+@media screen and (max-width:900px){
+    main #m{
+        margin: 50px auto;
+        padding: 40px 0 5px;
+    }
+    main #c{
+        flex-direction: column;
+    }
+    main #c img{
+        width: 100%;
+    }
+    main #c #t{
+        padding-right: 0;
+        margin-bottom: 0px;
+        position: relative;
+        top: -100px;
+    }
+    main #c #t p{
+        font-size:20px;
+        text-align: center;
+    }
+    main .s{
+        margin-top: 8%;
+    }
+    main .s h3{
+        font-size: 25px;
+    }
+    #f .block h4{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:750px){
+    header{
+        flex-direction:column;
+    }
+}
+@media screen and (max-width:691px){
+    main #c #t{
+        margin-bottom: 5%;
+        top: -80px;
+    }
+    #idi .z img{
+        height: 300px;
+    }
+    #f .block #Name, #f .block #Email, #f .block #message{
+        width: 400px;
+    }
+    #f .block #butt{
+        width: 422px;
+    }
+}
+@media screen and (max-width:605px){
+    main #c #t{
+        top: -80px;
+        margin-bottom: 4%;
+    }
+    #idi .z img{
+        height: 200px;
+    }
+    #m #x{
+        width: 95%;
+    }
+    footer .l{
+        font-size: 15px;
+        padding: 5px 55px;
+    }
+}
+@media screen and (max-width:523px){
+    #f .block #Name, #f .block #Email, #f .block #message{
+        width: 300px;
+        margin-left:30px;
+    }
+    #f .block #butt{
+        width: 322px;
+        margin-left:30px;
+    }
+} 
+@media screen and (max-width:500px){
+    header nav ul{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    header nav ul li{
+        padding: 2px 0;
+    }
+    header nav ul a{
+        padding: 10px 0;   
+    }
+    main #c #t{
+        top: -50px;
+    }
+    #be .d{
+        width: 99%;
+        margin-top:35px;
+    }
+}
+@media screen and (max-width:468px){
+    #m #x p{
+        font-size: 17px;
+    }
+    #f .block p{
+        font-size: 18px;
+    }
+    footer .l #r li{
+        display:block;
+        text-align: center;
+    }
+}
+@media screen and (max-width:400px){
+    main #c #t{
+        top: -40px;
+    }
+    #f .block{
+        padding: 25px 0;
+    }
+    #idi .z img{
+        height: 150px;
+    }
+    #f .block #Name, #f .block #Email, #f .block #message{
+            width: 200px;
+            margin-left:55px;
+    }
+    #f .block #butt{
+            width: 222px;
+            margin-left:55px;
+    }   
+}
+@media screen and (max-width:322px){
+    #f .block #Name, #f .block #Email, #f .block #message, #f .block #butt{
+            margin-left:25px;
+    }
+}
