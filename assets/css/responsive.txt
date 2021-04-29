@@ -114,6 +114,9 @@
         width: 99%;
         margin-top:35px;
     }
+    #be .d p{
+        font-size: 17px;
+    }
 }
 @media screen and (max-width:468px){
     #m #x p{
